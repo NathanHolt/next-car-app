@@ -10,5 +10,5 @@ export interface CustomButtonProps {
 
 export interface CustomManufacturerProps {
     manufacturer: string;
-    setManufacturer:
+    setManufacturer: React.Dispatch<React.SetStateAction<string>>;
 }
