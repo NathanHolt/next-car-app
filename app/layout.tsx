@@ -1,3 +1,4 @@
+import { NavBar, Footer } from '@/components'
 import './globals.css'
 
 export const metadata = {
@@ -13,7 +14,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className='relative'>
+        <NavBar />
         {children}
+        <Footer />
       </body>
     </html>
   )
