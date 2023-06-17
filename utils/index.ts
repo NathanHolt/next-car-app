@@ -29,7 +29,7 @@ export const calculateCarRent = (city_mpg: number, year: number) => {
   return rentalRatePerDay.toFixed(0);
 }
 
-export const generateCarImageUrl = (car: CarProps, temp: string) => {return "test"}
+export const generateCarImageUrl = (car: CarProps, temp: string) => {return "/test"}
 
 
 
