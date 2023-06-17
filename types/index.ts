@@ -12,3 +12,7 @@ export interface CustomManufacturerProps {
     manufacturer: string;
     setManufacturer: React.Dispatch<React.SetStateAction<string>>;
 }
+
+export interface CustomFilterProps {
+    title: string;
+}
