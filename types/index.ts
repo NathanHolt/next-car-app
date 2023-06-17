@@ -7,3 +7,8 @@ export interface CustomButtonProps {
     handleClick?:
     MouseEventHandler<HTMLButtonElement>;
 }
+
+export interface CustomManufacturerProps {
+    manufacturer: string;
+    setManufacturer:
+}
