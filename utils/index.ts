@@ -15,6 +15,26 @@ export async function fetchCars() {
 //     return result;
 }
 
+export const calculateCarRent = (city_mpg: number, year: number) => {
+  const basePricePerDay = 50;
+  const mileageFactor = 0.1;
+  const ageFactor = 0.05;
+
+  const mileageRate = city_mpg * mileageFactor;
+  const ageRate = (new Date().getFullYear() - year) * ageFactor;
+
+  const rentalRatePerDay = basePricePerDay + mileageRate + ageRate;
+
+  return rentalRatePerDay.toFixed(0);
+}
+
+
+
+
+
+
+
+
 export const testCarData = [
     {
       "city_mpg": 23,
@@ -28,10 +48,10 @@ export const testCarData = [
       "make": "toyota",
       "model": "corolla",
       "transmission": "a",
-      "year": 1993
+      "year": 2020
     },
     {
-      "city_mpg": 23,
+      "city_mpg": 53,
       "class": "compact car",
       "combination_mpg": 26,
       "cylinders": 4,
@@ -42,10 +62,10 @@ export const testCarData = [
       "make": "toyota",
       "model": "corolla",
       "transmission": "m",
-      "year": 1993
+      "year": 2000
     },
     {
-      "city_mpg": 23,
+      "city_mpg": 33,
       "class": "compact car",
       "combination_mpg": 25,
       "cylinders": 4,
@@ -56,7 +76,7 @@ export const testCarData = [
       "make": "toyota",
       "model": "corolla",
       "transmission": "a",
-      "year": 1993
+      "year": 1995
     },
     {
       "city_mpg": 23,
@@ -73,7 +93,7 @@ export const testCarData = [
       "year": 1993
     },
     {
-      "city_mpg": 23,
+      "city_mpg": 29,
       "class": "small station wagon",
       "combination_mpg": 25,
       "cylinders": 4,
@@ -84,6 +104,6 @@ export const testCarData = [
       "make": "toyota",
       "model": "corolla wagon",
       "transmission": "a",
-      "year": 1993
+      "year": 1999
     }
   ]
