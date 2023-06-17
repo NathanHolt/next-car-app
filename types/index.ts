@@ -10,7 +10,7 @@ export interface CustomButtonProps {
 
 export interface CustomManufacturerProps {
     manufacturer: string;
-    setManufacturer: React.Dispatch<React.SetStateAction<string>>;
+    setManufacturer: (manufacturer: string) => void;
 }
 
 export interface CustomFilterProps {
