@@ -1,8 +1,10 @@
+"use client";
+
 import { CarCard, CustomFilter, Hero, SearchBar, ShowMore } from '@/components'
 import { fuels, yearsOfProduction } from '@/constants';
 import { fetchCars, testCarData } from '@/utils'
 
-export default async function Home({ searchParams }) {
+export default function Home() {
   // TODO uncomment and delete testData
   // const allCars = await fetchCars({
   //   manufacturer: searchParams.manufacturer || '',
