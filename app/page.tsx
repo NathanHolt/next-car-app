@@ -5,10 +5,10 @@ import { fetchCars, testCarData } from '@/utils'
 export default async function Home({ searchParams }) {
   // TODO uncomment and delete testData
   // const allCars = await fetchCars({
-  //   manufacturer: searchParams.manufacturer || '',
+  //   manufacturer: searchParams.manufacturer || 'Audi',
   //   year: searchParams.year || '',
   //   fuel: searchParams.fuel || '',
-  //   limit: searchParams.limit || '',
+  //   limit: searchParams.limit || '10',
   //   model: searchParams.model || '',
   // });
   const allCars = testCarData;
